@@ -1,0 +1,5 @@
+# dsh-j-space bundle patch layer: registers the plugin entry.
+- insert:
+    - id: dsh-j-space
+      name: 'dsh-j-space'
+      config: {}

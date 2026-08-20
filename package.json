@@ -1,0 +1,28 @@
+{
+  "name": "dsh-space-cognition-suite",
+  "version": "4.0.0",
+  "description": "J-Space Cognition Suite as a DSH plugin — an inference-time cognitive control layer. On every session it injects a compact J-Space activation header (premise, gate, module index, invariants), registers a `jspace` ledger tool wrapping the bundled jspace.py controller, and syncs the j-space skill into the agent skills directory (default ~/.agents/skills/j-space) for skill-aware hosts.",
+  "type": "module",
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "j-space",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
+    "@deepseek-ai/schemastery": ">=3.0.0",
+    "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
+    "cordis": ">=4.0.0-rc <5"
+  },
+  "license": "Apache-2.0"
+}
