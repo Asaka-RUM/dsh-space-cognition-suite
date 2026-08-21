@@ -1,5 +1,7 @@
 # dsh-space-cognition-suite
 
+English | [中文](README.zh.md)
+
 J-Space Cognition Suite as a DeepSeek Harness (DSH) plugin.
 
 An inference-time cognitive control layer: it gives an agent a deliberate inner workspace and a discipline for using it — a premise, a task gate (fast/full/loop), module-based on-demand loading, seam-based auditing, and a durable ledger that carries state across seams and turns.
